@@ -1,0 +1,6 @@
+ffmpeg -i "input file" -c:v libx264 -b 1M -preset slow -c:a aac -ab 128k -movflags faststart "output.mp4"
+
+
+Bulk Operation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+for %i in (*.mp4) do ffmpeg -i "%i" -c:v libx264 -b 1M -preset slow -c:a aac -ab 128k -movflags faststart "OUT/%i.mp4"
