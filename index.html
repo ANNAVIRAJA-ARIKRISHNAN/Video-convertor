@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Convertor App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link href="style.css" />
+  </head>
+  <body>
+    <div class="conatiner" id="newContainer">
+      <br /><br />
+      <div class="p-3 mb-4">
+        <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg" id="newProject">
+            New Project
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="display: none" id="optionContainer">
+      <br /><br />
+      <h1 style="text-align: center">Video Convertor App</h1>
+      <br />
+      <div class="form-group">
+        <button id="select-directory" class="btn btn-block btn-danger">
+          Select an empty directory
+        </button>
+      </div>
+      <br />
+      <div class="form-group">
+        <button
+          id="upload-file"
+          class="btn btn-block btn-danger"
+          style="display: none"
+        >
+          Select a video file
+        </button>
+      </div>
+    </div>
+
+    <div class="container" style="display: none" id="convertContainer">
+      <br /><br />
+      <h1 style="text-align: center">Video Convertor App</h1>
+      <br />
+      <div class="form-group">
+        <button id="convert" class="btn btn-block btn-success">
+          Convert mp4 to m3u8
+        </button>
+      </div>
+      <br />
+      <div class="form-group">
+        <button id="newProject_over" class="btn btn-block btn-info">
+          New Project
+        </button>
+      </div>
+    </div>
+
+    <div id="info"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="convertor.js"></script>
+  </body>
+</html>
